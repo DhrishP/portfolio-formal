@@ -6,6 +6,7 @@ import Project from "./(Projects)/Project";
 import Contact from "./(Contact)/Contact";
 import AppNavbar from "@/components/app-navbar";
 import Experience from "./(Experience)/Experience";
+import VideoSection from "./(VideoSection)/VideoSection";
 
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
       </div>
       <div className="h-full w-screen">
         <Project />
+      </div>
+      <div className="h-full w-screen">
+        <VideoSection />
       </div>
       <div className="h-[80vh] md:h-full translate-y-24 w-screen">
         <Contact />
