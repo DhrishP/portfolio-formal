@@ -13,6 +13,7 @@ import {
   LinkedinIcon,
   Sun,
   Moon,
+  Video,
 } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 import Link from "next/link";
@@ -60,6 +61,13 @@ const AppNavbar = () => {
                     >
                       <LinkedinIcon className="h-4 w-4" />
                       <h3>Linkedin</h3>
+                    </Link>
+                    <Link
+                      href="/videos"
+                      className="flex items-center hover:bg-primary-foreground space-x-2 border-muted border rounded px-1 mb-2 cursor-pointer py-2   "
+                    >
+                      <Video className="h-4 w-4" />
+                      <h3>Videos</h3>
                     </Link>
                   </ul>
                 </PopoverContent>
@@ -121,7 +129,14 @@ const AppNavbar = () => {
                     <Presentation className="h-5 w-5" />
                     <h3>Projects</h3>
                   </a>
-                  <li className="col-span-2">
+                  <Link
+                    href="/videos"
+                    className="p-5 rounded-md bg-secondary border flex space-x-2 items-center   "
+                  >
+                    <Video className="h-5 w-5" />
+                    <h3>Videos</h3>
+                  </Link>
+                  <li className="col-span-1">
                     {theme.theme === "dark" ? (
                       <>
                         <Button

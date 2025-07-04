@@ -9,11 +9,12 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Github, Twitter, LinkedinIcon, File } from "lucide-react";
+import { Github, Twitter, LinkedinIcon, File, Video } from "lucide-react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const { setTheme } = useTheme();
@@ -71,6 +72,15 @@ const Navbar = () => {
                       <span>Resume</span>
                     </a>
                   </DropdownMenuItem>
+                  <DropdownMenuItem className="cursor-pointer ">
+                    <Link
+                      className="flex items-center justify-center "
+                      href="/videos"
+                    >
+                      <Video className="mr-2 h-4 w-4" />
+                      <span>Videos</span>
+                    </Link>
+                  </DropdownMenuItem>
                 </DropdownMenuContent>
               </Avatar>
               <h3 className="">Dhrish Parekh</h3>
@@ -97,9 +107,6 @@ const Navbar = () => {
             <h2 className="-translate-x-8  -translate-y-1 text-xs">Links</h2>
           </div>
         </div>
-        {/* <div className="absolute flex  items-center animate-pulse flex-col left-20 md:left-10 lg:left-[12.3rem] top-16">
-     
-    </div> */}
         <ul className="w-1/2 flex cursor-pointer mr-2 md:mr-2  items-center space-x-6 justify-center  ">
           <li className="hover:text-gray-600">
             {" "}
@@ -116,6 +123,10 @@ const Navbar = () => {
           <li className="hover:text-gray-600">
             {" "}
             <a href="#projects">Projects</a>{" "}
+          </li>
+          <li className="hover:text-gray-600">
+            {" "}
+            <Link href="/videos">Videos</Link>{" "}
           </li>
           <li className="hover:text-gray-600">
             {" "}
