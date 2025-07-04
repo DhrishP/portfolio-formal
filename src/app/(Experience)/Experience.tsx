@@ -5,25 +5,24 @@ import ReactMarkdown from "react-markdown";
 
 const experiences = [
   {
-    title: "Frontend Developer",
-    company: "CelebralZip Private Limited",
-    period: "Feb 2024 - July 2024",
-    description: `Worked on the core frontend of the website using React.js , material UI , typescript , react redux. \n\n -Learned lazy loading of components in react(lodash) \n\n -made websockets to show realtime progress ,speed and ETA for uploading large files. \n\n -file structure and refactoring of a large production ready app \n\n -debugging code using react dev tools \n\n -global state using redux and useContext \n\n
--form validation using formik , material UI styling of the app. `,
+    title: "AI Full Stack Engineer",
+    company: "Induced",
+    period: "Jan 2025 - Present",
+    description: `Working as a founding engineer at Induced, developing cutting-edge AI solutions and voice agents. \n\n -Developed voice agents with multiple providers, incorporating call and web application options, resulting in estimated savings of over $10,000 \n\n -Designed scalable REST APIs in Node.js/Express and integrated them seamlessly with MongoDB, supporting high-volume data access for multiple client software \n\n -Created three client demos, managing the end-to-end development process \n\n -Optimized SQL and MongoDB queries to enhance API call performance by 10x \n\n -Effectively transitioned between five different codebases to contribute to various services \n\n -Collaborated on an internal web search tool to replace web search APIs for web context in LLMs, improving the accuracy of web results \n\n -Designed an event-driven, object-oriented architecture to ensure modular code development \n\n -Created 3+ packages, including notification, event bus, etc, improving modularity of the code in the monorepo`,
     color: "bg-primary",
   },
   {
-    title: "Full Stack Developer",
-    company: "EpiphanyAI",
-    period: "May 2024 - Present",
-    description: `A founding engineer contributed heavily in making the backend of the product using various AI libaries. \n\n -Working with a seasonal silicon valley founder($400MM in acquisitions) - made the vercel ai sdk tooling functionality manually to use non supported llms like llama70b,qwen,etc for inference providers like groq,fireworks(reduced cost by 80%) \n\n
--shifted from tavily to searX for getting sources and media for the application(reduced cost by 90%+) \n\n
--added parallel generative UI streaming for media and sources section of app ( vercel ai sdk) \n\n
--generated sitemaps for 200k+ queries \n\n
--solved TTL devops errors , client side exceptions and frontend issues for emergency prod fixes \n\n
--created the underhood agent functionality of vercel ai sdk to support widgets \n\n
--made functionality widgets like weather , finance for the app(more to come) \n\n
--use of langchain for object generation in non support inference providers`,
+    title: "Founding AI Fullstack Engineer",
+    company: "VeerOne (EpiphanyAI)",
+    period: "May 2024 - Jan 2025",
+    description: `A founding engineer who contributed heavily to building VeerOne search (now sunset with 265k+ lifetime users). \n\n -Collaborated with a seasoned Silicon Valley founder (over $400M in acquisitions) for building VeerOne search \n\n -Created the vercel ai sdk tooling functionality manually to use non supported llms like llama70b,qwen,etc for inference providers like groq,fireworks(reduced cost by 80%) \n\n -Migrated from Tavily to SearX for sourcing media and news, cutting costs by 90%+ \n\n -Generated sitemaps for 200K+ queries, enhancing search visibility \n\n -Resolved TTL DevOps errors, frontend exceptions, and emergency production issues \n\n -Developed underhood agent functionality in Vercel AI SDK to support widgets \n\n -Created finance, weather and other widgets to enhance user engagement \n\n -Designed AI evaluation frameworks to assess responses for privacy, security, and content moderation (e.g., violence)`,
+    color: "bg-primary",
+  },
+  {
+    title: "Software Developer Internship",
+    company: "CerebralZip Technologies Pvt. Ltd.",
+    period: "Feb 2024 - Jul 2024",
+    description: `Worked on the core frontend of the website using React.js, Material UI, TypeScript, and React Redux. \n\n -Developed a mechanism to lazy load a react component for optimization \n\n -Developed a robust file upload system capable of handling large files efficiently using web sockets \n\n -Contributed to restructuring and improving the maintainability of a large-scale production application \n\n -Worked on debugging and fixing production issues, ensuring system reliability \n\n -Fixed React re-rendering issues to increase the user experience \n\n -Implemented global state management using Redux and useContext, ensuring efficient state handling across the application \n\n -Implemented form validation and enhanced the app's UI/UX for better user interaction`,
     color: "bg-primary",
   },
 ];
