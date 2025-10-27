@@ -65,7 +65,7 @@ const Navbar = () => {
                     <a
                       className="flex items-center justify-center "
                       target="_blank"
-                      href="https://dhrishp.tiiny.site"
+                      href="https://dhrish-resume.tiiny.site"
                     >
                       <File className="mr-2 h-4 w-4" />
                       <span>Resume</span>

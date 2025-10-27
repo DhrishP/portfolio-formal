@@ -149,7 +149,7 @@ const Contact = () => {
                     className="rounded-full hover:bg-primary hover:text-white transition-colors"
                   >
                     <a
-                      href="https://dhrishp.tiiny.site"
+                      href="https://dhrish-resume.tiiny.site"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Resume"

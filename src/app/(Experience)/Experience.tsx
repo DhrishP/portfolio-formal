@@ -1,48 +1,35 @@
 "use client";
 import React from "react";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import ReactMarkdown from "react-markdown";
+import { ChevronRight } from "lucide-react";
 
 const experiences = [
   {
-    title: "Frontend Developer",
+    title: "Full Stack Developer",
     company: "CelebralZip Private Limited",
     period: "Feb 2024 - July 2024",
-    description: `Worked on the core frontend of the website using React.js , material UI , typescript , react redux. \n\n -Learned lazy loading of components in react(lodash) \n\n -made websockets to show realtime progress ,speed and ETA for uploading large files. \n\n -file structure and refactoring of a large production ready app \n\n -debugging code using react dev tools \n\n -global state using redux and useContext \n\n
--form validation using formik , material UI styling of the app. `,
+    description: `Contributed to the core frontend using React, TypeScript, Material UI, and Redux, focusing on scalable architecture and performance. Implemented lazy loading, real-time upload tracking with WebSockets, and robust form validation. Refactored large production codebases, improved state management, and enhanced overall UI consistency and maintainability.
+`,
     color: "bg-primary",
   },
   {
-    title: "Full Stack Developer",
+    title: "Full Stack Developer(AI)",
     company: "EpiphanyAI",
-    period: "May 2024 - Present",
-    description: `A founding engineer contributed heavily in making the backend of the product using various AI libaries. \n\n -Working with a seasonal silicon valley founder($400MM in acquisitions) - made the vercel ai sdk tooling functionality manually to use non supported llms like llama70b,qwen,etc for inference providers like groq,fireworks(reduced cost by 80%) \n\n
--shifted from tavily to searX for getting sources and media for the application(reduced cost by 90%+) \n\n
--added parallel generative UI streaming for media and sources section of app ( vercel ai sdk) \n\n
--generated sitemaps for 200k+ queries \n\n
--solved TTL devops errors , client side exceptions and frontend issues for emergency prod fixes \n\n
--created the underhood agent functionality of vercel ai sdk to support widgets \n\n
--made functionality widgets like weather , finance for the app(more to come) \n\n
--use of langchain for object generation in non support inference providers`,
+    period: "May 2024 - Jan 2025",
+    description: `Collaborated with a Silicon Valley founder to build and scale VeerOne search (265k+ users), leading initiatives across backend, frontend, and DevOps. Transitioned web search infrastructure in-house, improved site performance, and developed interactive, reusable UI components. Enhanced search visibility through large-scale sitemap generation and optimized Next.js features for faster, more reliable user experiences.`,
     color: "bg-primary",
+  },
+  {
+    title: "Full Stack Developer(AI)",
+    company:"Induced AI",
+    period: "Jan 2025 - Present",
+    description: `Developed and deployed AI voice agents and web applications, contributing across multiple codebases and leading several client projects from prototype to production. Worked on internal tools for improving web search and lead extraction, optimized databases and APIs for performance, and implemented modular, event-driven architectures to enhance system scalability and automation. `,
+    color: "bg-secondary",
   },
 ];
 
-const ExperienceCard = ({
-  title,
-  company,
-  period,
-  description,
-  index,
-  color,
-}: {
-  title: string;
-  company: string;
-  period: string;
-  description: string;
-  index: number;
-  color: string;
-}) => {
+const ExperienceCard = ({ title, company, period, description, index, color }: { title: string; company: string; period: string; description: string; index: number; color: string }) => {
   const cardVariants = {
     offscreen: {
       y: 50,
@@ -181,6 +168,29 @@ const AnimatedExperiencePortfolio = () => {
             </React.Fragment>
           ))}
         </div>
+
+        {/* More on this section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="flex justify-center mt-16"
+        >
+          <motion.a
+            href="https://dhrish-resume.tiiny.site"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="group flex items-center gap-3 px-6 py-3 bg-primary/10 hover:bg-primary/20 rounded-full border border-primary/20 hover:border-primary/40 transition-all duration-300 cursor-pointer"
+          >
+            <span className="text-lg font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors duration-300">
+              More on this
+            </span>
+            <ChevronRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform duration-300" />
+          </motion.a>
+        </motion.div>
       </div>
     </div>
   );
