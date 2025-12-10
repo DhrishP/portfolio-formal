@@ -13,7 +13,7 @@ import AppNavbar from "@/components/app-navbar";
 import { fetchLoomMetadata, formatDuration } from "@/lib/loom";
 
 const VideoCard = ({ video, index }: { video: typeof videosData[0]; index: number }) => {
-  const [duration, setDuration] = useState(video.duration);
+  const [duration, setDuration] = useState("0:00");
 
   useEffect(() => {
     async function load() {
