@@ -13,6 +13,8 @@ import {
   LinkedinIcon,
   Sun,
   Moon,
+  PenTool,
+  PlayCircle,
 } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 import Link from "next/link";
@@ -93,34 +95,48 @@ const AppNavbar = () => {
               <PopoverContent className="w-[90vw] mb-3 bg-slate-100 dark:bg-slate-700   ">
                 {" "}
                 <ul className="grid grid-cols-2 gap-2 ">
-                  <a
-                    href="#contact"
+                  <Link
+                    href="/#contact"
                     className="p-5 rounded-md bg-secondary border flex space-x-2 items-center   "
                   >
                     <User2 className="h-5 w-5" />
                     <h3>Contact</h3>
-                  </a>
-                  <a
-                    href="#about"
+                  </Link>
+                  <Link
+                    href="/#about"
                     className="p-5 rounded-md bg-secondary border flex space-x-2 items-center   "
                   >
                     <Briefcase className="h-5 w-5" />
                     <h3>Services</h3>
-                  </a>
-                  <a
-                    href="#skills"
+                  </Link>
+                  <Link
+                    href="/#skills"
                     className="p-5 rounded-md bg-secondary border flex space-x-2 items-center   "
                   >
                     <Braces className="h-5 w-5" />
                     <h3>Skills</h3>
-                  </a>
-                  <a
-                    href="#projects"
+                  </Link>
+                  <Link
+                    href="/#projects"
                     className="p-5 rounded-md bg-secondary border flex space-x-2 items-center   "
                   >
                     <Presentation className="h-5 w-5" />
                     <h3>Projects</h3>
-                  </a>
+                  </Link>
+                  <Link
+                    href="/blogs"
+                    className="p-5 rounded-md bg-secondary border flex space-x-2 items-center   "
+                  >
+                    <PenTool className="h-5 w-5" />
+                    <h3>Blogs</h3>
+                  </Link>
+                  <Link
+                    href="/videos"
+                    className="p-5 rounded-md bg-secondary border flex space-x-2 items-center   "
+                  >
+                    <PlayCircle className="h-5 w-5" />
+                    <h3>Videos</h3>
+                  </Link>
                   <li className="col-span-2">
                     {theme.theme === "dark" ? (
                       <>

@@ -12,6 +12,7 @@ import {
 import { Github, Twitter, LinkedinIcon, File } from "lucide-react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -80,7 +81,7 @@ const Navbar = () => {
             <div className="flex items-center  justify-center ">
               <Image
                 src={"/images/arrow.png"}
-                className="rotate-180 origin-left  "
+                className="rotate-180 origin-left dark:invert "
                 alt=""
                 width={30}
                 height={10}
@@ -88,38 +89,46 @@ const Navbar = () => {
               <Image
                 src={"/images/arrow.png"}
                 className="-rotate-180 transform  -scale-x-100
-      -translate-x-10  origin-center  "
+      -translate-x-10  origin-center dark:invert "
                 alt=""
                 width={30}
                 height={10}
               />
             </div>
-            <h2 className="-translate-x-8  -translate-y-1 text-xs">Links</h2>
+            <h2 className="-translate-x-8  -translate-y-1 text-xs text-foreground">Links</h2>
           </div>
         </div>
         {/* <div className="absolute flex  items-center animate-pulse flex-col left-20 md:left-10 lg:left-[12.3rem] top-16">
      
     </div> */}
-        <ul className="w-1/2 flex cursor-pointer mr-2 md:mr-2  items-center space-x-6 justify-center  ">
+        <ul className="w-2/3 flex cursor-pointer mr-2 md:mr-2  items-center space-x-6 justify-center  ">
           <li className="hover:text-gray-600">
             {" "}
-            <a href="#home">Home</a>{" "}
+            <Link href="/#home">Home</Link>{" "}
+          </li>
+          {/* <li className="hover:text-gray-600">
+            {" "}
+            <Link href="/#about">About</Link>{" "}
+          </li> */}
+          <li className="hover:text-gray-600">
+            {" "}
+            <Link href="/#skills">Skills</Link>{" "}
           </li>
           <li className="hover:text-gray-600">
             {" "}
-            <a href="#about">About</a>{" "}
+            <Link href="/#projects">Projects</Link>{" "}
+          </li>
+           <li className="hover:text-gray-600">
+            {" "}
+            <Link href="/blogs">Blogs</Link>{" "}
+          </li>
+           <li className="hover:text-gray-600">
+            {" "}
+            <Link href="/videos">Videos</Link>{" "}
           </li>
           <li className="hover:text-gray-600">
             {" "}
-            <a href="#skills">Skills</a>{" "}
-          </li>
-          <li className="hover:text-gray-600">
-            {" "}
-            <a href="#projects">Projects</a>{" "}
-          </li>
-          <li className="hover:text-gray-600">
-            {" "}
-            <a href="#contact">Contact</a>{" "}
+            <Link href="/#contact">Contact</Link>{" "}
           </li>
           <li>
             <DropdownMenu>

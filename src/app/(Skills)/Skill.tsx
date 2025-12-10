@@ -39,24 +39,30 @@ const Skill = () => {
         </h1>
         <p className="text-gray-500">Web of Skills</p>
       </div>
-      <div className="w-3/4 mx-auto  relative flex lg:h-screen md:h-[80vh] h-[50vh] items-center justify-center  bg-circularLightsm  md:bg-circularLight dark:bg-circularDarksm md:dark:bg-circularDark  ">
+      <div className="w-full md:w-3/4 mx-auto relative flex lg:h-screen md:h-[80vh] h-[50vh] items-center justify-center bg-circularLightsm md:bg-circularLight dark:bg-circularDarksm md:dark:bg-circularDark overflow-hidden">
         <motion.div
-          className="flex items-center justify-center rounded-full font-semibold bg-transparent text-primary md:bg-primary md:text-secondary shadow-primary cursor-pointer lg:p-8 md:p-5 sm:p-6 sm:text-xs"
+          className="flex items-center justify-center rounded-full font-semibold bg-transparent text-primary md:bg-primary md:text-secondary shadow-primary cursor-pointer lg:p-8 md:p-5 sm:p-6 sm:text-xs z-10"
           whileHover={{ scale: 1.05 }}
         >
           Tech
         </motion.div>
-        <Skills name="HTML5" x="-23vw" y="2vw" />
+        
+        {/* Ring 1 */}
+        <Skills name="HTML5" x="-20vw" y="2vw" />
         <Skills name="Tailwind" x="-5vw" y="-10vw" />
         <Skills name="Typescript" x="20vw" y="6vw" />
-        <Skills name="NextJS" x="0vw" y="11vw" />
-        <Skills name="Langchain" x="-20vw" y="-15vw" />
-        <Skills name="PostgresSQL" x="15vw" y="-12vw" />
-        <Skills name="React" x="31vw" y="-5vw" />
-        <Skills name="AWS" x="-34vw" y="-12vw" />
-        <Skills name="NodeJS" x="-25vw" y="18vw" />
-        <Skills name="VectorDB" x="20vw" y="18vw" />
-        <Skills name="Redis" x="35vw" y="18vw" />
+        <Skills name="NextJS" x="0vw" y="12vw" />
+        
+        {/* Ring 2 */}
+        <Skills name="Langchain" x="-25vw" y="-10vw" />
+        <Skills name="PostgresSQL" x="18vw" y="-12vw" />
+        <Skills name="React" x="32vw" y="-5vw" />
+        
+        {/* Ring 3 */}
+        <Skills name="AWS" x="-35vw" y="5vw" />
+        <Skills name="NodeJS" x="-15vw" y="20vw" />
+        <Skills name="VectorDB" x="15vw" y="22vw" />
+        <Skills name="Redis" x="35vw" y="15vw" />
       </div>
     </>
   );
