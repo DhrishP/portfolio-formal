@@ -21,10 +21,10 @@ const Herobody = () => {
           </div>
           <div className="space-y-7">
             <p className="text-gray-500 dark:text-gray-300 font-light ">
-              Turning vision into reality with coding{" "}
-              <br className="md:hidden" /> and designing using{" "}
-              <br className="hidden md:block" /> awesome technologies.I also
-              write to <br /> document my life journey.
+              I build things because I’m curious. Coding is just the tool I use to
+              <br className="hidden md:block" /> turn that curiosity into something
+              real. <br /> I write to make sense of what I’m learning and who I’m
+              becoming.
             </p>
             <Button className="hover:bg-secondary hover:border-primary hover:text-primary border duration-150 transition ease-out">
               <a href="#contact" className="flex items-center">

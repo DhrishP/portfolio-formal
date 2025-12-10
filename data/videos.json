@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "How I made AI voice agents from scratch",
+    "description": "A walkthrough of the process of making AI voice agents for my company induced.ai , it uses vercel ai sdk , twilio , plivo , elevenlabs made sloely via typescript technologies.",
+    "videoUrl": "https://www.loom.com/share/ff3a3fda8538445da8e1d3fa8411c09a",
+    "thumbnail": "/images/voice.png"
+  },
+  {
+    "id": 2,
+    "title": "ForgeCommerce Demo and Why it was created",
+    "description": "A demo of the ForgeCommerce and ForgeStore project and why it was created.",
+    "videoUrl": "https://www.loom.com/share/edcbc18c6ff7435d969003f0eaedebbd",
+    "thumbnail": "/images/dashboard-dark.png"
+  },
+  {
+    "id": 3,
+    "title": "My Journey of becoming a Software Engineer",
+    "description": "A walkthrough of my journey of becoming a software engineer, from my early days of learning to code to my current role as a software engineer and how I got here.",
+    "videoUrl": "https://www.loom.com/share/0af2a496244e40d4ac877a7cafa7021d",
+    "thumbnail": "/images/journey.png"
+  }
+]
+
