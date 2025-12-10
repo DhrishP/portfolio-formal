@@ -9,15 +9,15 @@ const experiences = [
     title: "Full Stack Developer",
     company: "CelebralZip Private Limited",
     period: "Feb 2024 - July 2024",
-    description: `Contributed to the core frontend using React, TypeScript, Material UI, and Redux, focusing on scalable architecture and performance. Implemented lazy loading, real-time upload tracking with WebSockets, and robust form validation. Refactored large production codebases, improved state management, and enhanced overall UI consistency and maintainability.
+    description: `Contributed to the core frontend using React, TypeScript, Material UI, and Redux/Zustand, focusing on scalable architecture and performance. Implemented lazy loading, real-time upload tracking with WebSockets, and robust form validation. Refactored large production codebases, improved state management, and enhanced overall UI consistency and maintainability.
 `,
     color: "bg-primary",
   },
   {
-    title: "Full Stack Developer(AI)",
-    company: "EpiphanyAI",
+    title: "Founding Full Stack Developer (AI)",
+    company: "EpiphanyAI/VeerOne",
     period: "May 2024 - Jan 2025",
-    description: `Collaborated with a Silicon Valley founder to build and scale VeerOne search (265k+ users), leading initiatives across backend, frontend, and DevOps. Transitioned web search infrastructure in-house, improved site performance, and developed interactive, reusable UI components. Enhanced search visibility through large-scale sitemap generation and optimized Next.js features for faster, more reliable user experiences.`,
+    description: `Founding engineer for VeerOne Search, partnering with a veteran Silicon Valley founder to build the product and scaled it to 265k+ users before it was sunset in 2024. I lead initiatives across backend, frontend, AI infrastructure and sometimes even DevOps. Transitioned web search infrastructure in-house, improved site performance, and developed interactive, reusable UI components. Enhanced search visibility through large-scale sitemap generation and optimized Next.js features for faster, more reliable user experiences.`,
     color: "bg-primary",
   },
   {
