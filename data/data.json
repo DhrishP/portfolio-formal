@@ -1,26 +1,17 @@
 [
   {
     "id": 1,
-    "title": "Forge Commerce",
-    "description": "It is a API which can be used to make many e-commerce stores with payment integration (please read the README on github first)",
-    "github": "https://github.com/DhrishP/ecomm-dashboard-admin",
-    "ImageUrl": "/images/dashboard-dark.png",
-    "websiteUrl": "https://forge-commerce.vercel.app/",
-    "color": "gray"
-  },
-  {
-    "id": 2,
-    "title": "Forge Store",
-    "description": "It is the frontend template using e-comm admin API for the data , filters and payment processing",
-    "github": "https://github.com/DhrishP/ecomm-store",
-    "ImageUrl": "/images/store-luxury.png",
-    "websiteUrl": "https://forge-ecomm-store.vercel.app/",
+    "title": "Voice Agents",
+    "description": "A comprehensive platform for building real-time AI voice agents with multi-provider telephony support (Twilio & WebSockets), BullMQ job processing, and modular integrations across Deepgram, ElevenLabs, and OpenAI.",
+    "github": "https://github.com/DhrishP/voice-agents",
+    "ImageUrl": "/images/voice.png",
+    "websiteUrl": "https://github.com/DhrishP/voice-agents",
     "color": "blue"
   },
   {
-    "id":3,
+    "id": 2,
     "title": "RAGVault",
-    "description": "RAGVault is a CLI tool to use RAG(Retrieval Augmented Generation) in your your terminal using local vector database which does embeddings locally and also answers your queries using default chromaDB LLM or you can use your own LLM",
+    "description": "RAGVault is a CLI tool to use RAG(Retrieval Augmented Generation) in your terminal using local vector database which does embeddings locally and also answers your queries using default chromaDB LLM or you can use your own LLM",
     "github": "https://github.com/DhrishP/RAGVault",
     "ImageUrl": "/images/ragvault.png",
     "websiteUrl": "https://github.com/DhrishP/RAGVault",
