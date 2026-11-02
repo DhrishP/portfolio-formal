@@ -28,9 +28,9 @@ export default function Home() {
       <div className="w-screen bg-background">
         <BlogPreview />
       </div>
-      <div className="w-screen bg-secondary/20">
+      {/* <div className="w-screen bg-secondary/20">
         <VideoPreview />
-      </div>
+      </div> */}
       <div className="h-[80vh] md:h-full translate-y-24 w-screen">
         <Contact />
       </div>
