@@ -2,7 +2,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import ReactMarkdown from "react-markdown";
-import { ChevronRight } from "lucide-react";
 
 const experiences = [
   {
@@ -32,13 +31,6 @@ const experiences = [
     period: "May 2024 - Jan 2025",
     description: `Built the core AI infrastructure and search systems powering VeerOne Search, contributing to its growth to 265K+ lifetime users. Extended the Vercel AI SDK to support previously unsupported open-source models like Llama 70B and Qwen on Groq and Fireworks, cutting inference costs by 80%. Independently reworked search infrastructure, replacing expensive third-party services with self-hosted alternatives to cut costs by 90%+, and built interactive generative UI widgets for AI search.`,
     color: "bg-secondary",
-  },
-  {
-    title: "Software Developer Intern",
-    company: "CelebralZip Private Limited",
-    period: "Feb 2024 - July 2024",
-    description: `Contributed to the core frontend using React, TypeScript, Material UI, and Redux/Zustand, focusing on scalable architecture and performance. Implemented lazy loading, real-time upload tracking with WebSockets, and robust form validation. Refactored large production codebases, improved state management, and enhanced overall UI consistency and maintainability.`,
-    color: "bg-primary",
   },
 ];
 
@@ -168,29 +160,6 @@ const AnimatedExperiencePortfolio = () => {
             ))}
           </div>
         </div>
-
-        {/* More on this section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="flex justify-center mt-20"
-        >
-          <motion.a
-            href="https://dhrish-resume.tiiny.site"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="group flex items-center gap-3 px-8 py-4 bg-white dark:bg-slate-900 rounded-full shadow-lg border border-primary/10 hover:border-primary/50 transition-all duration-300 cursor-pointer"
-          >
-            <span className="text-lg font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors duration-300">
-              View Full Resume
-            </span>
-            <ChevronRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform duration-300" />
-          </motion.a>
-        </motion.div>
       </div>
     </div>
   );
