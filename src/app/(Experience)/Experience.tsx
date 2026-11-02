@@ -6,26 +6,39 @@ import { ChevronRight } from "lucide-react";
 
 const experiences = [
   {
-    title: "Full Stack Developer",
+    title: "Technical Co-founder",
+    company: "Gygs",
+    period: "Apr 2026 - Present",
+    description: `Organising the creative economy. Currently at 3.1k users`,
+    color: "bg-primary",
+  },
+  {
+    title: "Technical Co-founder",
+    company: "SilentGuard",
+    period: "Feb 2026 - Apr 2026",
+    description: `Built and launched the MVP in 5 days, experimented with sub-1B open-source LLMs and NER models for PII detection, validated the product with ~20 early users, and pivoted toward a browser extension after identifying compliance and trust as barriers to enterprise adoption. Ultimately, we did not achieve product-market fit.`,
+    color: "bg-secondary",
+  },
+  {
+    title: "AI Full Stack Engineer",
+    company: "Induced",
+    period: "Jan 2025 - Jan 2026",
+    description: `Developed multi-provider AI voice agents handling thousands of automated calls and web interactions with high reliability and minimal human intervention. Designed scalable REST APIs using Node.js/Express and MongoDB for multiple client applications, built reusable monorepo packages and event-driven services, and delivered multiple end-to-end client demos across different codebases.`,
+    color: "bg-primary",
+  },
+  {
+    title: "Founding AI Fullstack Engineer",
+    company: "VeerOne",
+    period: "May 2024 - Jan 2025",
+    description: `Built the core AI infrastructure and search systems powering VeerOne Search, contributing to its growth to 265K+ lifetime users. Extended the Vercel AI SDK to support previously unsupported open-source models like Llama 70B and Qwen on Groq and Fireworks, cutting inference costs by 80%. Independently reworked search infrastructure, replacing expensive third-party services with self-hosted alternatives to cut costs by 90%+, and built interactive generative UI widgets for AI search.`,
+    color: "bg-secondary",
+  },
+  {
+    title: "Software Developer Intern",
     company: "CelebralZip Private Limited",
     period: "Feb 2024 - July 2024",
-    description: `Contributed to the core frontend using React, TypeScript, Material UI, and Redux/Zustand, focusing on scalable architecture and performance. Implemented lazy loading, real-time upload tracking with WebSockets, and robust form validation. Refactored large production codebases, improved state management, and enhanced overall UI consistency and maintainability.
-`,
+    description: `Contributed to the core frontend using React, TypeScript, Material UI, and Redux/Zustand, focusing on scalable architecture and performance. Implemented lazy loading, real-time upload tracking with WebSockets, and robust form validation. Refactored large production codebases, improved state management, and enhanced overall UI consistency and maintainability.`,
     color: "bg-primary",
-  },
-  {
-    title: "Founding Full Stack Developer (AI)",
-    company: "EpiphanyAI/VeerOne",
-    period: "May 2024 - Jan 2025",
-    description: `Founding engineer for VeerOne Search, partnering with a veteran Silicon Valley founder to build the product and scaled it to 265k+ users before it was sunset in 2024. I lead initiatives across backend, frontend, AI infrastructure and sometimes even DevOps. Transitioned web search infrastructure in-house, improved site performance, and developed interactive, reusable UI components. Enhanced search visibility through large-scale sitemap generation and optimized Next.js features for faster, more reliable user experiences.`,
-    color: "bg-primary",
-  },
-  {
-    title: "Full Stack Developer(AI)",
-    company: "Induced AI",
-    period: "Jan 2025 - Present",
-    description: `Developed and deployed AI voice agents and web applications, contributing across multiple codebases and leading several client projects from prototype to production. Worked on internal tools for improving web search and lead extraction, optimized databases and APIs for performance, and implemented modular, event-driven architectures to enhance system scalability and automation. `,
-    color: "bg-secondary",
   },
 ];
 
